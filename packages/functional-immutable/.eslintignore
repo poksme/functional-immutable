@@ -1,0 +1,3 @@
+node_modules
+# Files produced by build
+/index.js

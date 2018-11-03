@@ -1,0 +1,57 @@
+{
+  "name": "functional-immutable",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Iteratee-first data-last immutable.js curried functions",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "babel src -d .",
+    "copy:readme": "cp ../../README.md .",
+    "copy:license": "cp ../../LICENSE .",
+    "prepublish": "npm run build && npm run copy:readme && npm run copy:license",
+    "test": "jest"
+  },
+  "files": [
+    "/index.js"
+  ],
+  "jest": {
+    "coverageDirectory": "./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poksme/functional-immutable.git"
+  },
+  "keywords": [
+    "immutable",
+    "fp",
+    "functional programming",
+    "functional",
+    "wrapper",
+    "functional wrapper",
+    "ramda",
+    "lodash",
+    "point free"
+  ],
+  "author": "Bertrand Boustany",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poksme/functional-immutable/issues"
+  },
+  "homepage": "https://github.com/poksme/functional-immutable#readme",
+  "peerDependencies": {
+    "immutable": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.27.0",
+    "immutable": "^3.8.2",
+    "jest": "^23.6.0"
+  }
+}
