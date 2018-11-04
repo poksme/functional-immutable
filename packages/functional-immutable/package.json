@@ -2,7 +2,7 @@
   "name": "functional-immutable",
   "version": "0.0.1",
   "private": false,
-  "description": "Iteratee-first data-last immutable.js curried functions",
+  "description": "Iteratee-first data-last null-safe immutable.js curried functions",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
@@ -13,7 +13,8 @@
     "test": "jest"
   },
   "files": [
-    "/index.js"
+    "/index.js",
+    "/list.js"
   ],
   "jest": {
     "coverageDirectory": "./src"
@@ -52,6 +53,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.27.0",
     "immutable": "^3.8.2",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11"
   }
 }
