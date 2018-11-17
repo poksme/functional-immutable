@@ -1,6 +1,6 @@
 {
   "name": "functional-immutable",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
   "description": "Iteratee-first data-last null-safe immutable.js curried functions",
   "main": "index.js",
@@ -57,7 +57,7 @@
     "ramda": "^0.25.0",
     "reselect": "^4.0.0"
   },
-  "gitHead": "67953e6ca14a14397382332fde4c0378a924335d",
+  "gitHead": "a240af61f5bf6144009024384534c525790636de",
   "dependencies": {
     "lodash.get": "^4.4.2",
     "lodash.isfunction": "^3.0.9"
