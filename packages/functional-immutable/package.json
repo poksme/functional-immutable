@@ -13,8 +13,7 @@
     "test": "jest"
   },
   "files": [
-    "/index.js",
-    "/list.js"
+    "/index.js"
   ],
   "jest": {
     "coverageDirectory": "./src"
@@ -48,12 +47,19 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^5.8.0",
+    "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.27.0",
     "immutable": "^3.8.2",
     "jest": "^23.6.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "ramda": "^0.25.0",
+    "reselect": "^4.0.0"
+  },
+  "gitHead": "67953e6ca14a14397382332fde4c0378a924335d",
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "lodash.isfunction": "^3.0.9"
   }
 }
