@@ -1,6 +1,6 @@
 {
   "name": "functional-immutable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "Iteratee-first data-last null-safe immutable.js curried functions",
   "main": "index.js",
