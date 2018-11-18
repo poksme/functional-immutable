@@ -4,6 +4,8 @@ Iteratee-first data-last null-safe curried functions wrapper for immutable.js
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat)](https://opensource.org/licenses/MIT) [![npm: functional-immutable](https://img.shields.io/npm/v/functional-immutable.svg?style=flat)](https://www.npmjs.com/package/functional-immutable) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style-flat)](https://lernajs.io/)
 
+> Are you using Immutable.js with React and Redux? Take a look at [react-redux-immutabe](https://github.com/poksme/react-redux-immutable) for mapping your immutable state to your props without performance hit.
+
 ## Installation
 
 Functional Immutable relies on a single peer dependency, it requires **Immutable 3** already installed.
@@ -86,3 +88,27 @@ export const getUppercaseLastName = createSelector(
 getUppercaseLastName(applicationState); // SKYWALKER
 getUppercaseLastName(); // DOE
 ```
+
+## Api Changes
+
+### `delete` => `deleteAt`
+
+`delete` being a reserved keyword, the delete method has been re-exported as `deleteAt`.
+
+## Contribute
+
+### Something missing?
+
+Found a missing function? Feel free to contribute by opening a Pull Request.
+
+This wrapper relies on naïve re-exports of Immutable object methods. Here is how to add a missing method called `missing`.
+
+In [index.js](packages/functional-immutable/src/index.js) add the following:
+
+```javascript
+export const missing = (...vargs) => data => safeApply(data, 'missing', vargs);
+```
+
+### Test coverage
+
+You can also contribute by writing unit tests, for example by rewriting existing [Immutable 3 Unit Tests](https://github.com/facebook/immutable-js/tree/v3.8.2/__tests__) using `functional-immutable`.

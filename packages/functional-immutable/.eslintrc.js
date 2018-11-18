@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     'import/no-deprecated': warn,
     'max-len': [error, { code: 150 }],
+    'consistent-return': off,
   },
   overrides: [
     {

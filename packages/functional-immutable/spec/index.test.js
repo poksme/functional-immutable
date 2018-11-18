@@ -1,4 +1,4 @@
-import { List } from 'immutable';
+import Immutable, { List } from 'immutable';
 import fp from 'lodash/fp';
 import * as fi from '../src/index';
 
@@ -11,6 +11,10 @@ describe('List', () => {
   test('of', () => {
     expect(List.of(1, 2, 3, 4)).toEqual(List([1, 2, 3, 4]));
     expect(List.of({ x: 1 }, 2, [3], 4)).toEqual(List([{ x: 1 }, 2, [3], 4]));
+  });
+  test('fromJS', () => {
+    expect(List.of(1, 2, 3, 4)).toEqual(fi.fromJS([1, 2, 3, 4]));
+    expect(Immutable.fromJS([{ x: 1 }, 2, [3], 4])).toEqual(fi.fromJS([{ x: 1 }, 2, [3], 4]));
   });
   // immutable-js tests rewritten
   it('of provides initial values', () => {

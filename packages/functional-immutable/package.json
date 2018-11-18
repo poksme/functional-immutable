@@ -31,6 +31,7 @@
     "functional wrapper",
     "ramda",
     "lodash",
+    "reselect",
     "point free"
   ],
   "author": "Bertrand Boustany",
@@ -57,9 +58,5 @@
     "ramda": "^0.25.0",
     "reselect": "^4.0.0"
   },
-  "gitHead": "a240af61f5bf6144009024384534c525790636de",
-  "dependencies": {
-    "lodash.get": "^4.4.2",
-    "lodash.isfunction": "^3.0.9"
-  }
+  "gitHead": "a240af61f5bf6144009024384534c525790636de"
 }
